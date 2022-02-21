@@ -43,10 +43,10 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "layout-app",
+      name: "dashboard_app",
       filename: "remoteEntry.js",
       exposes: {
-        "./Layout": "./src/app.js"
+        "./Dashboard": "./src/app.js"
       },
      
     }),
