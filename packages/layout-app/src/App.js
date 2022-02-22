@@ -6,10 +6,10 @@ import './index.css'
 
 export default ({ theme }) => {
   return (
-    <BrowserRouter >
+    
       <div className="w-100">
         <LayoutContainer />
       </div>
-    </BrowserRouter>
+    
   );
 };

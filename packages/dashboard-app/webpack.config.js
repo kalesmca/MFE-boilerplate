@@ -6,7 +6,7 @@ module.exports = {
   mode: "development",
   devtool: "hidden-source-map",
   output: {
-    publicPath: "http://localhost:8001/",
+    publicPath: "http://localhost:8002/",
     clean: true,
   },
   resolve: {

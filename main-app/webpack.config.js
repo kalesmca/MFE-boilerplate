@@ -6,7 +6,7 @@ module.exports = {
   mode: "development",
   devtool: "hidden-source-map",
   output: {
-    publicPath: "http://localhost:8001/",
+    publicPath: "http://localhost:8080/",
     clean: true,
   },
   resolve: {
@@ -43,10 +43,11 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "layout_app",
+      name: "main_app",
       filename: "remoteEntry.js",
-      exposes: {
-        "./Layout": "./src/app.js"
+      remotes: {
+        "layout_app": "layout_app@http://localhost:8001/remoteEntry.js",
+        "dashboard_app": "dashboard_app@http://localhost:8002/remoteEntry.js",
       },
      
     }),

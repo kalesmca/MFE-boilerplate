@@ -2,5 +2,6 @@
   "devDependencies": {
     "lerna": "^4.0.0"
   },
-  "name": "MFE-boilerplate"
+  "name": "MFE-boilerplate",
+  "scripts":{"start" : "lerna run start"}
 }

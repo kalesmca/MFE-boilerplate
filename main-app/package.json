@@ -1,14 +1,14 @@
 {
-  "name": "dashboard-app",
+  "name": "main-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "core application for MFE",
   "main": "index.js",
   "scripts": {
     "webpack": "webpack --watch",
-    "serve": "serve dist -p 8002",
+    "serve": "serve dist -p 8080",
     "start": "concurrently \"npm run webpack\" \"npm run serve\""
   },
-  "author": "kaleeswaran",
+  "author": "Kaleeswaran M",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.0",
